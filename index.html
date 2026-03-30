@@ -3,48 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BusineesCard</title>
+<title>Nexora</title>
 
 <style>
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial;
   background: #0f172a;
   color: white;
+}
+
+.header {
   text-align: center;
+  padding: 60px 20px;
 }
 
-.container {
-  padding: 40px 20px;
+.header h1 {
+  font-size: 40px;
 }
 
-h1 {
-  font-size: 32px;
+.header p {
+  color: #94a3b8;
 }
 
-p {
-  color: #cbd5f5;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 15px 25px;
-  background: #22c55e;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.section {
-  margin-top: 60px;
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
   background: #1e293b;
-  margin: 10px;
   padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #22c55e;
+  color: white;
+  text-decoration: none;
   border-radius: 10px;
 }
 </style>
@@ -52,26 +58,27 @@ p {
 
 <body>
 
-<div class="container">
-  <h1>BusineesCard</h1>
-  <p>Dijital kartvizitini saniyeler içinde oluştur</p>
-
-  <a class="btn" href="https://github.com/Sezginucelebi/app-site/releases/download/v1/BusineesCard.apk">
-    APK İndir
-  </a>
+<div class="header">
+  <h1>Nexora</h1>
+  <p>Akıllı mobil uygulamalar geliştiriyoruz</p>
 </div>
 
-<div class="section">
-  <h2>Özellikler</h2>
+<div class="apps">
 
-  <div class="card">✔️ Hızlı kartvizit oluşturma</div>
-  <div class="card">✔️ Kolay paylaşım</div>
-  <div class="card">✔️ Modern tasarım</div>
-</div>
+  <div class="card">
+    <h3>Business Card</h3>
+    <p>Dijital kartvizit uygulaması</p>
+    <a class="btn" href="https://github.com/Sezginucelebi/app-site/releases/download/v1/BusineesCard.apk">
+      İndir
+    </a>
+  </div>
 
-<div class="section">
-  <h2>Neden Bu Uygulama?</h2>
-  <p>Klasik kartvizitleri unut. Tüm bilgilerin tek uygulamada.</p>
+  <div class="card">
+    <h3>Yakında...</h3>
+    <p>Yeni uygulama geliyor</p>
+    <a class="btn" href="#">Çok Yakında</a>
+  </div>
+
 </div>
 
 </body>
