@@ -3,126 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>İletişim - Alvora Software</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #1e293b;
-  padding: 15px 30px;
-}
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Container */
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 15px;
-}
-
-/* Form */
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-}
-
-textarea {
-  height: 120px;
-}
-
-/* Button */
-.btn {
-  width: 100%;
-  padding: 12px;
-  background: #22c55e;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.btn:hover {
-  background: #16a34a;
-}
-
-/* WhatsApp */
-.whatsapp {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  padding: 12px;
-  background: #25D366;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 20px;
-  color: #94a3b8;
-}
-</style>
+<title>Nova Soft | İletişim</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- Navbar -->
-<div class="navbar">
-  <a href="index.html">← Ana Sayfa</a>
+<nav class="navbar">
+  <div class="logo">Nova Soft Tech </div>
+  <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+    <li><a href="kurumsal.html">Kurumsal</a></li>
+    <li><a href="yonetim.html">Yönetim Kurulu</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h1>İletişim</h1>
+  <p>Bize ulaşmak için aşağıdaki bilgileri kullanabilirsiniz.</p>
+  <p>Email: alvora@example.com</p>
+  <p>Telefon: +90 555 555 55 55</p>
 </div>
 
-<!-- Contact Form -->
-<div class="container">
-  <h2>İletişim</h2>
-  <p>Bize mesaj gönderin</p>
-
-  <!-- Mail Form -->
-  <form action="mailto:alvora@example.com" method="post" enctype="text/plain">
-    
-    <input type="text" name="isim" placeholder="Adınız" required>
-    
-    <input type="email" name="email" placeholder="Email adresiniz" required>
-    
-    <textarea name="mesaj" placeholder="Mesajınız" required></textarea>
-    
-    <button class="btn" type="submit">Mesaj Gönder</button>
-  
-  </form>
-
-  <!-- WhatsApp -->
-  <a class="whatsapp" href="https://wa.me/905XXXXXXXXX" target="_blank">
-    WhatsApp ile Yaz
-  </a>
-
-</div>
-
-<!-- Footer -->
-<div class="footer">
-  © 2026 Alvora Software
-</div>
+<footer class="footer">
+  <p>© 2026 Nova Software Technology | Tüm hakları saklıdır</p>
+</footer>
 
 </body>
 </html>
