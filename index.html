@@ -2,110 +2,41 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="Nova Soft Tech" content="width=device-width, initial-scale=1.0">
-<title>Nova Soft | Giriş</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuroNova Software</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #1e293b;
-  padding: 15px 30px;
-  position: sticky;
-  top: 0;
-}
-.navbar .logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-.navbar ul li a {
-  color: #94a3b8;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.navbar ul li a:hover {
-  color: #22c55e;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-}
-.hero h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-.hero p {
-  color: #94a3b8;
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-.hero .btn {
-  display: inline-block;
-  padding: 15px 30px;
-  background: #22c55e;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  font-size: 16px;
-}
-.hero .btn:hover {
-  background: #16a34a;
-  transform: scale(1.05);
-}
-
-/* Footer */
-.footer {
-  background: #1e293b;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  color: #94a3b8;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">Nova Soft Tech</div>
-  <ul>
-    <li><a href="#hero">Ana Sayfa</a></li>
-    <li><a href="iletisim.html">İletişim</a></li>
-    <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
-    <li><a href="kurumsal.html">Kurumsal</a></li>
-    <li><a href="yonetim.html">Yönetim Kurulu</a></li>
-  </ul>
-</nav>
+<div id="navbar"></div>
 
-<!-- Hero Section -->
-<div id="hero" class="hero">
-  <h1>Hoş Geldiniz</h1>
-  <p>Geleceği yeniden inşaa ediyoruz.</p> <p> </p>Mobil uygulamalar, Yapay Zeka destekli projeler ve daha fazlası...</p>
-  <a href="kurumsal.html" class="btn">Bizi Tanıyın</a>
+<div class="header">
+  <h1>AuroNova Software</h1>
+  <p>Akıllı mobil uygulamalar geliştiriyoruz</p>
 </div>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>© 2026 Nova Software Technology | Tüm hakları saklıdır</p>
-</footer>
+<div class="apps">
 
+  <div class="card">
+    <img src="images/logo.png" class="card-img">
+    <h3>Business Card</h3>
+    <p>Dijital kartvizit uygulaması</p>
+    <a class="btn" href="#">İndir</a>
+  </div>
+
+  <div class="card">
+    <img src="images/comingsoon.png" class="card-img">
+    <h3>Yakında...</h3>
+    <p>Yeni uygulama geliyor</p>
+    <a class="btn">Çok Yakında</a>
+  </div>
+
+</div>
+
+<div id="footer"></div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
