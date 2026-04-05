@@ -1,1 +1,89 @@
-style.html
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #1e293b;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.navbar a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Cards */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Image */
+.card-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Button */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  background: #22c55e;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Contact */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
