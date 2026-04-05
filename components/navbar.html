@@ -1,7 +1,13 @@
-<nav class="navbar">
-  <div class="logo">Alvora Software</div>
-  <ul>
-    <li><a href="index.html">Ana Sayfa</a></li>  <li><a href="contact.html">İletişim</a></li>
-  </ul>
-   
-</nav>
+document.getElementById("navbar").innerHTML = `
+  <nav class="navbar">
+    <a href="#">Ana Sayfa</a>
+    <a href="#apps">Uygulamalar</a>
+    <a href="#footer">İletişim</a>
+  </nav>
+`;
+
+document.getElementById("footer").innerHTML = `
+  <footer class="footer">
+    <p>&copy; 2026 AuroNova Software</p>
+  </footer>
+`;
