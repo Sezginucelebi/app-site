@@ -11,3 +11,9 @@ document.getElementById("navbar").innerHTML = `
     </div>
   </nav>
 `;
+
+document.getElementById("footer").innerHTML = `
+  <footer class="footer">
+    <p>&copy; 2026 AuroNova Software</p>
+  </footer>
+`;
