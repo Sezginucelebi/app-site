@@ -1,5 +1,48 @@
-  <nav class="navbar">
-    <a href="#">Ana Sayfa</a>
-    <a href="#apps">Uygulamalar</a>
-    <a href="#footer">İletişim</a>
-  </nav>
+/* Varsayılan (PC için) */
+.apps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Kartlar */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  .apps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
