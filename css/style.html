@@ -1,38 +1,61 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #1e293b;
-  padding: 15px 30px;
-}
-
-/* Logo */
-.navbar .logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* Menü */
-.navbar ul {
-  list-style: none;
-  display: flex;              /* 🔥 yatay yapar */
-  flex-direction: row;        /* garanti */
-  gap: 20px;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background: #f9f9f9;
 }
 
-/* Menü item */
-.navbar ul li {
-  display: inline-block;
+.navbar {
+  background: #007acc;
+  padding: 10px;
+  text-align: center;
 }
 
-/* Link */
-.navbar ul li a {
-  color: #94a3b8;
+.navbar a {
+  color: white;
+  margin: 0 15px;
   text-decoration: none;
 }
 
-.navbar ul li a:hover {
-  color: #22c55e;
+.header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #007acc;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
