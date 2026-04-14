@@ -60,16 +60,11 @@ body {
   height: auto;
 }
 
-/* BUTON GRUBU (YAN YANA) */
-.btn-group {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-/* BUTON */
+/* BUTONLAR (HTML DEĞİŞMEDEN YAN YANA) */
 .btn {
-  flex: 1; /* eşit genişlik */
+  display: inline-block;
+  width: 48%;
+  margin-top: 10px;
   padding: 10px;
   text-align: center;
   background: #007acc;
@@ -77,9 +72,15 @@ body {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.2s;
+  box-sizing: border-box;
 }
 
+/* Aralarındaki boşluk */
+.btn:first-of-type {
+  margin-right: 4%;
+}
+
+/* Hover */
 .btn:hover {
   background: #005f99;
 }
@@ -114,9 +115,13 @@ body {
   }
 }
 
-/* Mobilde butonlar alt alta */
+/* Küçük ekranda butonlar alt alta */
 @media (max-width: 500px) {
-  .btn-group {
-    flex-direction: column;
+  .btn {
+    width: 100%;
+  }
+
+  .btn:first-of-type {
+    margin-right: 0;
   }
 }
