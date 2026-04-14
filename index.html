@@ -47,6 +47,7 @@
       justify-content: center;
       gap: 20px;
       padding: 20px;
+      flex-wrap: wrap;
     }
 
     .card {
@@ -59,7 +60,7 @@
     }
 
     .card-img {
-      height: 40px;   /* Navbar logosuyla aynı yükseklik */
+      height: 80px;
       width: auto;
       object-fit: contain;
       margin-bottom: 10px;
@@ -73,6 +74,13 @@
       color: #fff;
       border-radius: 4px;
       text-decoration: none;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
     }
 
     /* Footer */
@@ -99,25 +107,27 @@
 
   <div class="header">
     <h1>AuroNova Software</h1>
-    <p>Sadece mobil uygulamalar değil hayatınızı kolaylaştıran uygulamalar geliştiriyoruz</p>
+    <p>Sadece mobil uygulamalar değil, hayatınızı kolaylaştıran çözümler geliştiriyoruz</p>
   </div>
 
   <div class="apps">
-  <div class="card">
-    <img src="images/logo.png" class="card-img" alt="Business Card Logo">
-    <h3>Business Card</h3>
-    <p>Dijital kartvizit uygulaması</p>
-
-    <div class="btn-group">
-      <a class="btn" href="https://github.com/Sezginucelebi/BusineesCard/releases/download/latest/app-debug.apk">Android</a>
-      <a class="btn" href="https://github.com/Sezginucelebi/BusineesCard/releases/download/latest/app-debug.apk">iOS</a>
+    <!-- Business Card -->
+    <div class="card">
+      <img src="images/logo.png" class="card-img" alt="Business Card Logo">
+      <h3>Business Card</h3>
+      <p>Dijital kartvizit uygulaması</p>
+      <div class="btn-group">
+        <a class="btn" href="https://github.com/Sezginucelebi/BusineesCard/releases/download/latest/app-debug.apk">Android</a>
+        <a class="btn" href="#">iOS</a>
+      </div>
     </div>
 
+    <!-- Coming Soon -->
     <div class="card">
       <img src="images/comingsoon.png" class="card-img" alt="Coming Soon">
       <h3>Yakında...</h3>
       <p>Yeni uygulama geliyor</p>
-      <a class="btn">Çok Yakında</a>
+      <a class="btn" href="#">Çok Yakında</a>
     </div>
   </div>
 
