@@ -2,6 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f9f9f9;
+
+  /* Footer fix için */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar */
@@ -38,19 +43,23 @@ body {
   padding: 50px 20px;
 }
 
-/* Kartlar */
+/* ANA İÇERİK (footer'ı aşağı iter) */
 .apps {
   display: flex;
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  flex-wrap: wrap;
+
+  flex: 1; /* kritik: footer aşağı gider */
 }
 
+/* Kart */
 .card {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   text-align: center;
   width: 250px;
 }
@@ -60,7 +69,7 @@ body {
   height: auto;
 }
 
-/* BUTONLAR (HTML DEĞİŞMEDEN YAN YANA) */
+/* BUTONLAR (HTML değişmeden yan yana) */
 .btn {
   display: inline-block;
   width: 48%;
@@ -75,26 +84,23 @@ body {
   box-sizing: border-box;
 }
 
-/* Aralarındaki boşluk */
 .btn:first-of-type {
   margin-right: 4%;
 }
 
-/* Hover */
 .btn:hover {
   background: #005f99;
 }
 
-/* Footer */
+/* Footer (artık en altta) */
 .footer {
   background: #333;
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 30px;
 }
 
-/* Mobil uyum */
+/* Mobil */
 @media (max-width: 768px) {
   .apps {
     flex-direction: column;
@@ -115,7 +121,7 @@ body {
   }
 }
 
-/* Küçük ekranda butonlar alt alta */
+/* Küçük ekran */
 @media (max-width: 500px) {
   .btn {
     width: 100%;
